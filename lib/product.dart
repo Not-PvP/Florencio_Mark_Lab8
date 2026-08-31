@@ -26,7 +26,7 @@ const List<Product> allProducts = [
     description: '',
     price: 2999,
     stockQuantity: 10,
-    imagePath: 'assets/images/atommk890.png',
+    imagePath: 'assets/products/atommk890.png',
   ),
   Product(
     id: 2,
@@ -35,7 +35,7 @@ const List<Product> allProducts = [
     description: '',
     price: 1499,
     stockQuantity: 10,
-    imagePath: 'assets/images/gow191.png',
+    imagePath: 'assets/products/gow191.png',
   ),
   Product(
     id: 3,
@@ -44,7 +44,7 @@ const List<Product> allProducts = [
     description: '',
     price: 54999,
     stockQuantity: 10,
-    imagePath: 'assets/images/asusa15.png',
+    imagePath: 'assets/products/asusa15.png',
   ),
   Product(
     id: 4,
@@ -53,7 +53,7 @@ const List<Product> allProducts = [
     description: '',
     price: 18990,
     stockQuantity: 10,
-    imagePath: 'assets/images/beatsstudiopro.png',
+    imagePath: 'assets/products/beatsstudiopro.png',
   ),
   Product(
     id: 5,
@@ -62,7 +62,7 @@ const List<Product> allProducts = [
     description: '',
     price: 129999,
     stockQuantity: 10,
-    imagePath: 'assets/images/sonyalpha7.png',
+    imagePath: 'assets/products/sonyalpha7.png',
   ),
   Product(
     id: 6,
@@ -71,7 +71,7 @@ const List<Product> allProducts = [
     description: '',
     price: 17999,
     stockQuantity: 10,
-    imagePath: 'assets/images/mozaracing.png',
+    imagePath: 'assets/products/mozaracing.png',
   ),
   Product(
     id: 7,
@@ -80,7 +80,7 @@ const List<Product> allProducts = [
     description: '',
     price: 10999,
     stockQuantity: 10,
-    imagePath: 'assets/images/xiaomi2k.png',
+    imagePath: 'assets/products/xiaomi2k.png',
   ),
   Product(
     id: 8,
@@ -89,6 +89,6 @@ const List<Product> allProducts = [
     description: '',
     price: 249999,
     stockQuantity: 10,
-    imagePath: 'assets/images/nvidiartx5090.png',
+    imagePath: 'assets/products/nvidiartx5090.png',
   ),
 ];

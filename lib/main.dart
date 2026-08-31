@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_screen.dart';
 
 void main() => runApp(const MiniStore());
 
@@ -7,13 +8,10 @@ class MiniStore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Mini Store',
-      home: const Scaffold(
-        body: Center(
-          child: Text('Welcome to Mini Store.'),
-        ),
-      ),
+      home: HomeScreen(),
     );
   }
 }
