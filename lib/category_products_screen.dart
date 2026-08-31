@@ -2,17 +2,22 @@ import 'package:flutter/material.dart';
 import 'product.dart';
 import 'product_detail_screen.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class CategoryProductsScreen extends StatelessWidget {
+  final String category;
+
+  const CategoryProductsScreen({super.key, required this.category});
 
   @override
   Widget build(BuildContext context) {
+    final List<Product> filteredProducts = 
+        allProducts.where((p) => p.category == category).toList();
+
     return Scaffold(
       backgroundColor: const Color(0xFF0D0D0D),
       appBar: AppBar(
-        title: const Text('GearHub', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+        title: Text(category, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
         backgroundColor: const Color(0xFF1A1A1A),
-        elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(16),
@@ -22,9 +27,9 @@ class HomeScreen extends StatelessWidget {
           crossAxisSpacing: 16,
           mainAxisSpacing: 16,
         ),
-        itemCount: allProducts.length,
+        itemCount: filteredProducts.length,
         itemBuilder: (context, index) {
-          final product = allProducts[index];
+          final product = filteredProducts[index];
           return MouseRegion(
             cursor: SystemMouseCursors.click,
             child: GestureDetector(
